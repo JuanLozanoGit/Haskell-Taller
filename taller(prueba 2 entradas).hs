@@ -76,7 +76,7 @@ addProductAction inventory = do
     let newInventory = addProduct inventory name price quantity
     putStrLn $ "Producto '" ++ name ++ "' agregado exitosamente."
     return newInventory
-
+    
 updateQuantityAction :: Inventory -> IO Inventory
 updateQuantityAction inventory = do
     putStrLn "\n--- Actualizar Cantidad de Producto ---"
