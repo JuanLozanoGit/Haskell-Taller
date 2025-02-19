@@ -62,6 +62,7 @@ loop inventory = do
         "5" -> searchProductAction inventory >> loop inventory
         "6" -> applyDiscountAction inventory >>= loop
         "7" -> putStrLn "Saliendo..."
+        "Nota:" ->putStrLn "Seleccione una opción, recuerda primero ingresa producto(nombre), precio, cantidad "
         _   -> putStrLn "Opción no válida, intente nuevamente." >> loop inventory
 
 addProductAction :: Inventory -> IO Inventory
