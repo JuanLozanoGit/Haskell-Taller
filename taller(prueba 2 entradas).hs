@@ -52,7 +52,7 @@ loop inventory = do
     putStrLn "5. Buscar producto"
     putStrLn "6. Aplicar descuento"
     putStrLn "7. Salir"
-    putStr "Seleccione una opción: "
+    putStr "Seleccione una opción, recuerda primero ingresa producto(nombre), precio, cantidad "
     option <- getLine
     case option of
         "1" -> addProductAction inventory >>= loop
